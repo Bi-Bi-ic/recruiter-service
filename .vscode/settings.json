@@ -1,0 +1,9 @@
+{
+    "comboMode.comboTimeout": 5,
+    "powermode.comboThreshold": 4,
+    "powermode.enabled": true,
+    "powermode.enableShake": true,
+    "powermode.comboTimeout": 5,
+    "go.formatTool": "gofmt",
+    "json.maxItemsComputed": 10000
+}

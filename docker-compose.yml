@@ -1,0 +1,18 @@
+version: '3'
+services:
+  app:
+    container_name: recruiter-servicep
+    build: .
+    ports: 
+      - 8081:8081 # Forward the exposed port 8080 on the container to port 8080 on the host machine
+    restart: on-failure
+    volumes:
+      - api:/usr/src/recruiter-service/
+    networks:
+      - mentor-service_fullstack
+volumes:
+  api:
+
+networks:
+  mentor-service_fullstack:
+    external: true
